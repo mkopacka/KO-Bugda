@@ -45,7 +45,7 @@ function calculate_ap_archer() {
     // total value of dexterity
     var totalDex = baseDex + bonusDex;
     
-    // find coefficient value based on level (coefficientId) and type of weapon (method is in utils.js)
+    // find coefficient value based on level (coefficientId) and type of weapon (method is in coefficients.js)
     var coeff = getRogueCoefficients(coefficientId, 'bow');
 
     // Check your weapon damage
