@@ -1,9 +1,9 @@
 
 function calculate_ap_archer() {
     // AP of weapon in right hand
-    var crossbowAp = window.equiped.rightHand != null ? +window.equiped.rightHand.itemStat.attackPower : 0;
+    var crossbowAp = !window.isNullOrUndefined(window.equiped.rightHand) ? +window.equiped.rightHand.itemStat.attackPower : 0;
     // AP of weapon in left hand
-    var bowAp = window.equiped.leftHand != null ? +window.equiped.leftHand.itemStat.attackPower : 0;
+    var bowAp = !window.isNullOrUndefined(window.equiped.leftHand) ? +window.equiped.leftHand.itemStat.attackPower : 0;
     
     // Check character level. (84 means 83/1, 85 means 83/2 etc.) - Level 83 is max
     var levelDropDown = $("#level").data('kendoDropDownList');
@@ -29,11 +29,11 @@ function calculate_ap_archer() {
     var isCommanderDetermination = $("#commanderDeterminationBuffDropDown").data('kendoMobileSwitch').value();
     var isEnchant = $("#wepDropDown").data('kendoMobileSwitch').value();
     var isRedPotion = $("#redPotionOnOff").data('kendoMobileSwitch').value();
-    var leftPathos = window.equiped.leftPathos != null ? window.equiped.leftPathos.itemStat.damagePercentage : 0;
-    var rightPathos = window.equiped.rightPathos != null ? window.equiped.rightPathos.itemStat.damagePercentage : 0;
-    var tattoo = window.equiped.tattoo != null ? window.equiped.tattoo.itemStat.damagePercentage : 0;
-    var wings = window.equiped.wings != null ? window.equiped.wings.itemStat.damagePercentage : 0;
-    var emblem = window.equiped.emblem != null ? window.equiped.emblem.itemStat.damagePercentage : 0;
+    var leftPathos = !window.isNullOrUndefined(window.equiped.leftPathos) ? window.equiped.leftPathos.itemStat.damagePercentage : 0;
+    var rightPathos = !window.isNullOrUndefined(window.equiped.rightPathos) ? window.equiped.rightPathos.itemStat.damagePercentage : 0;
+    var tattoo = !window.isNullOrUndefined(window.equiped.tattoo) ? window.equiped.tattoo.itemStat.damagePercentage : 0;
+    var wings = !window.isNullOrUndefined(window.equiped.wings) ? window.equiped.wings.itemStat.damagePercentage : 0;
+    var emblem = !window.isNullOrUndefined(window.equiped.emblem) ? window.equiped.emblem.itemStat.damagePercentage : 0;
     var isMassive = $("#massiveOnOff").data('kendoMobileSwitch').value();
     var isSubside = $("#subsideOnOff").data('kendoMobileSwitch').value();
     
