@@ -51,6 +51,8 @@ function calculate_ac() {
     window.resultCalc.ac += window.setBonusSecret.ac;
     window.resultCalc.ac += window.setBonusRosetta.ac;
 
+    window.resultCalc.ac += window.achievement.ac;
+    
     if (isBluePotion) {
         window.resultCalc.ac += 60;
     }
@@ -182,8 +184,6 @@ function calculate_ac() {
     var isArmorEnchantScroll = $("#aesDropDown").data('kendoMobileSwitch').value();
     if (isArmorEnchantScroll)
         window.resultCalc.ac += 31;
-
-    window.resultCalc.ac += window.achievement.ac;
 
     if (isMalice || isTorment) {
         var multiplier = isMalice ? 0.75 : 0.7;
