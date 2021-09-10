@@ -1,8 +1,7 @@
 # KO-Bugda
 https://www.kobugda.com
 
-I received many requests to reveal equations for AP calculations. As time goes I decided to show them.
+I decided to extract some important parts of the code to be available for others so you can eventually build your own site. 
+In this way, there is a chance that KO players will still have some up to date site - yes, I am not maintaining KObugda anymore, just keeping it alive. 
 
-In case of questions, you can contact me on support@kobugda.com
-
-At the moment I don't want show all the codes (partialy because some parts are spaghetti and I am ashamed for them :D) but if you would like to see some other parts, you can contact me and I maybe will show them too. Anyway, true is that those equations are probably only harder thing on entire website.
+My code is quite terrible and that's reason why I show only specific parts. If you will want show some specific part, you can contact me (probably best way is through Steam KO Discord - you can tag me there and I'll eventually open PMs)
